@@ -1,3 +1,145 @@
 body {
   background: blanchedalmond;
+  color: hotpink;
 }
+
+* {
+  border: 2px solid black;
+}
+
+
+.container {
+  text-align: center;
+  justify-content: space-between;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.a, .c{
+  flex-grow:1
+}
+.b{
+  flex-grow: 3;
+}
+
+@media(min-width:600px) {
+  .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .a {
+    width: 100%;
+  }
+}
+
+.a, .b, .c {
+margin: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.a {
+  text-align: center;
+  width: 100%;
+  min-height: 20vh;
+  display: block;
+  align-items: center;
+
+}
+
+.b,
+.c {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.b {
+  width: 100%;
+  min-height: 60vh;
+  flex-grow: 7;
+
+}
+
+.c {
+  min-height: 20vh;
+  width: 100%;
+  flex-grow: 4;
+}
+
+
+
+
+
+
+/*
+.a{
+  background-color: blue;
+  width: 100%;
+  text-align: center;
+  min-height: 20vh;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+  min-height: 30vh;
+}
+
+
+.b {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  min-height: 60vh;
+  margin-left: 1em;
+  margin-right: 1em;
+  min-height: 70vh;
+}
+
+.c{
+  background-color: green;
+  width: 100%;
+  text-align: center;
+  min-height: 20vh;
+  margin-top: 1em;
+  margin-left: 1em;
+  margin-right: 1em
+
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* .a, .c{
+    flex: 1 auto;
+
+  }
+
